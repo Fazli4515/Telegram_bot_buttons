@@ -7,7 +7,7 @@ TOKEN='your token which was given by botfather'
 
 bot = telebot.TeleBot(TOKEN)
 
-@bot.message_handler(commands=['start'])
+@bot.message_handler(commands=['start','START'])
 def start(message):
     markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
     item1 = types.KeyboardButton('button name_1')
